@@ -1,8 +1,8 @@
 # ffmpeg.js
 
-[![NPM](https://nodei.co/npm/ffmpeg.js.png?downloads=true)](https://www.npmjs.com/package/ffmpeg.js)
+This is a fork of the original ffmpeg.js project that provides builds to use FFMPEG as a library for decoding live video streams.
 
-This library provides FFmpeg builds ported to JavaScript using [Emscripten project](https://github.com/emscripten-core/emscripten). Builds are optimized for in-browser use: minimal size for faster loading, asm.js, performance tunings, etc. Though they work in Node as well.
+The original ffmpeg.js project provides FFmpeg builds ported to JavaScript using [Emscripten project](https://github.com/emscripten-core/emscripten). Builds are optimized for in-browser use: minimal size for faster loading, asm.js, performance tunings, etc. Though they work in Node as well.
 
 ## Builds
 
@@ -11,8 +11,9 @@ Currently available builds (additional builds may be added in future):
 * `ffmpeg-worker-webm.js` - Web Worker version of `ffmpeg-webm.js`.
 * `ffmpeg-mp4.js` - MP4 encoding (H.264 & AAC & MP3 encoders, popular decoders).
 * `ffmpeg-worker-mp4.js` - Web Worker version of `ffmpeg-mp4.js`.
+* `ffmpeg-stream.js` - Version allowing direct access to avcodec to play live several codec video stream (i.e. h264,mpeg4). Other codecs can easily be added in the makefile
 
-Note: only NPM releases contain abovementioned files.
+Before building any of these target, install emscripten and don't forget to execute `source ./emsdk_env.sh` before calling `make`
 
 ## Version scheme
 
