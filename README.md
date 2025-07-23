@@ -162,7 +162,7 @@ git clone https://github.com/emscripten-core/emsdk.git && cd emsdk
 source emsdk_env.sh
 
 cd ~
-git clone https://github.com/Kagami/ffmpeg.js.git --recurse-submodules && cd ffmpeg.js
+git clone https://github.com/mbalieiro/ffmpeg.js.git --recurse-submodules && cd ffmpeg.js
 make
 ```
 
